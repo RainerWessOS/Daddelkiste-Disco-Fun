@@ -125,9 +125,9 @@ function setPFtxt() {
 	//setPF("L_Typ", playfield[1]);
 	setPF("L_Geld", playfield[2]);
 	setPF("L_Punkte", playfield[3]);
-	setPF("L_Spiele", playfield[4]);
-	setPF("L_Gewinn", playfield[5]);
-	setPF("L_Einsatz", playfield[6]);
+	setPF("L_Spiele", playfield[6]);
+	setPF("L_Gewinn", playfield[4]);
+	setPF("L_Einsatz", playfield[5]);
 	setPF("gar", playfield[8]);
 	setPF("gal", playfield[8]);
 	setPF("pl1", playfield[8]);
