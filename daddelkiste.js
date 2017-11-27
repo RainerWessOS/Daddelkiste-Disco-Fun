@@ -290,7 +290,7 @@ function ani_ss() {
 
 	ani = (ani) ? false : true;
 
-	if (ani) setColor("L_Spiele", "#FFFFFF");
+	if (ani) setColor("L_Spiele", "#FF0000");
 	else setColor("L_Spiele", "#FFCC00");
 }
 
@@ -487,7 +487,7 @@ function starte_Spiel() {
 			sonderspiel = false;
 			if (intS) {
 				clearInterval(intS);
-				setColor("L_Spiele", "#FFFFFF");
+				setColor("L_Spiele", "#FF0000");
 			}
 		}
 
@@ -703,6 +703,9 @@ function Teilgewinn_annehmen(tga) {
 				tg = Math.round(ss_neu / 2);
 				ss_neu = ss_neu - tg;
 				ss = ss + tg;
+				if (!sonderspiel) {
+		             intS = setInterval(ani_ss, 800);
+	            }
 				setInfo(infoText[13] + tg + infoText[15]);
 			}
 			if (ohne_tga) {
