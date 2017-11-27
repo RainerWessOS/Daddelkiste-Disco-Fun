@@ -1,5 +1,5 @@
 //** **********************************************************************
-//      Daddelkiste Version 0.90 - 2016 / 2017
+//      Daddelkiste Version 0.92 - 2016 / 2017
 //      Javascript implementation of an "Advanced Slot Machine"
 //
 //      Copyright (C) 2017 Rainer Wess, Osnabrück, Germany

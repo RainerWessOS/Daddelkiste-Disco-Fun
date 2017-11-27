@@ -1,5 +1,5 @@
 //*******************************************************************
-//      Daddelkiste Version 0.90 - 2016 / 2017
+//      Daddelkiste Version 0.92 - 2016 / 2017
 //      Javascript implementation of an "Advanced Slot Machine"
 //
 //      Copyright (C) 2017 Rainer Wess, Osnabrück, Germany
@@ -119,19 +119,21 @@ function setPF(pid, txt) {
 	id(pid).innerHTML = txt;
 }
 
+// Multi-Language
 function setPFtxt() {
-	setPF("Art", playfield[0]);
-	setPF("Typ", playfield[1]);
-	setPF("a1", playfield[2]);
-	setPF("a2", playfield[3]);
-	setPF("a3", playfield[4]);
-	setPF("a4", playfield[5]);
-	setPF("SS_label", playfield[6]);
+	//setPF("L_Geraet", playfield[0]);
+	//setPF("L_Typ", playfield[1]);
+	setPF("L_Geld", playfield[2]);
+	setPF("L_Punkte", playfield[3]);
+	setPF("L_Spiele", playfield[4]);
+	setPF("L_Gewinn", playfield[5]);
+	setPF("L_Einsatz", playfield[6]);
 	setPF("gar", playfield[8]);
 	setPF("gal", playfield[8]);
 	setPF("pl1", playfield[8]);
 	setPF("pl2", playfield[8]);
 }
+
 
 function setConfTxt() {
 
@@ -236,7 +238,7 @@ function zum_starten_auffordern() {
 }
 
 function zeige_Guthaben() {
-	id("Guthaben").value = String(guthaben) + ".00";
+	id("Geld").value = String(guthaben) + ".00";
 }
 
 function zeige_Punkte() {
@@ -248,7 +250,7 @@ function zeige_Gewinn() {
 }
 
 function zeige_Sonderspiele() {
-	id("Sonderspiele").value = String(ss);
+	id("Spiele").value = String(ss);
 }
 
 function zeige_Einsatz() {
@@ -288,8 +290,8 @@ function ani_ss() {
 
 	ani = (ani) ? false : true;
 
-	if (ani) setColor("SS_label", "#FFFFFF");
-	else setColor("SS_label", "#FFCC00");
+	if (ani) setColor("L_Spiele", "#FFFFFF");
+	else setColor("L_Spiele", "#FFCC00");
 }
 
 function lichtorgel() {
@@ -485,7 +487,7 @@ function starte_Spiel() {
 			sonderspiel = false;
 			if (intS) {
 				clearInterval(intS);
-				setColor("SS_label", "#FFFFFF");
+				setColor("L_Spiele", "#FFFFFF");
 			}
 		}
 

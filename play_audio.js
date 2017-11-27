@@ -1,5 +1,5 @@
 //*********************************************************************
-//      Daddelkiste Disco Points Version 0.90
+//      Daddelkiste Disco Points Version 0.92
 //      Javascript implementation of a penny arcade casino game
 //
 //      Copyright (C) 2017 Rainer Wess, Osnabrück, Germany

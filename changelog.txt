@@ -1,5 +1,8 @@
 changelog
 
+Version 0.92  2017.11.26
+HTML überarbeitet, sieht jetzt deutlich besser aus
+
 Version 0.90  2017.11.12
 Einstellung, Anleitung und Uber-Seite
 neu mit Navbar und erweitert

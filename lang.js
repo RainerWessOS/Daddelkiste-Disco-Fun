@@ -1,5 +1,5 @@
 //*******************************************************************
-//      Daddelkiste Disco Fun Version 0.90 
+//      Daddelkiste Disco Fun Version 0.92 
 //      Javascript implementation of a penny arcade casino game
 //
 //      Copyright (C) 2017 Rainer Wess, Osnabrück, Germany
@@ -81,7 +81,7 @@ playfield = [
 "PUNKTE",
 "GEWINN",
 "EINSATZ",
-"SONDERSPIELE",
+"SPIELE",
 "MULTI-SPIELE",
 "AUSSPIELUNG"
 ];
@@ -160,7 +160,7 @@ playfield = [
 "POINTS",
 "GAGNER",
 "PARI",
-"JEUX SPECIAUX",
+"JEUX",
 "MULTI JEUX",
 "PLAYOUT"
 ]
@@ -235,7 +235,7 @@ playfield = [
 "PUNTI",
 "WIN",
 "USO",
-"GIOCHI SPECIALI",
+"GIOCHI",
 "Multi-Games",
 "PLAYOUT"
 ]; 
@@ -311,7 +311,7 @@ playfield = [
 "Points",
 "Winst",
 "Inzet",
-"Speciale Spellen",
+"Spellen",
 "Multi Spellen",
 "Playout" 
 ]; 
@@ -388,7 +388,7 @@ playfield = [
 "PUNTOS",
 "GANAR",
 "APUESTA",
-"JUEGOS ESPECIALES",
+"JUEGOS",
 "JUEGOS MULTIPLES",
 "PLAYOUT"
 ]; 
@@ -465,7 +465,7 @@ playfield = [
 "PONTOS",
 "WIN",
 "USO",
-"Jogos Especiais",
+"Jogos",
 "Multi Jogos",
 "Playout"
 ];
@@ -542,7 +542,7 @@ playfield = [
 "POANG",
 "VINNA",
 "SLA VAD",
-"SPECIAL SPEL",
+"SPEL",
 "MULTI SPEL",
 "SPELA UT"
 ]; 
@@ -619,7 +619,7 @@ playfield = [
 "POINTS",
 "WIN",
 "BET",
-"SPECIAL GAMES",
+"GAMES",
 "MULTI GAMES",
 "PLAYOUT"
 ];
