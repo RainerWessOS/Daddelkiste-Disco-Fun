@@ -1,10 +1,11 @@
-//*********************************************************************
-//      Daddelkiste Disco Points Version 0.92
-//      Javascript implementation of a penny arcade casino game
-//
-//      Copyright (C) 2017 Rainer Wess, Osnabrück, Germany
-//      Open Source / Freeware - released under GPL 2.0
-//*********************************************************************
+
+/*
+*      Daddelkiste Duomatic Version 0.94
+*      Javascript implementation of an "Advanced Slot Machine"
+*
+*      Copyright  2017 Rainer Wess, OsnabrÃ¼ck, Germany
+*      Open Source / Freeware - released under GPL 2.0
+*/
 
 // create new audio object and load the audio file
 var audioSprite = new Audio();
@@ -62,14 +63,26 @@ audioSprite.addEventListener('timeupdate', onTimeUpdate, false);
 // in mobile Safari, the first time this is called will load the audio. Ideally, we'd load the audio file completely before doing this.
 var audio_play = function(id) {
     if (spriteData[id] && spriteData[id].length) {
-    	audioSprite.pause();
+     	audioSprite.pause();
         currentSprite = spriteData[id];
         audioSprite.currentTime = currentSprite.start;
-        audioSprite.play();
+        var playPromise = audioSprite.play();
+         
+         if (playPromise !== undefined) {
+              playPromise.then(_ => {
+                 // Automatic playback started!
+              })
+             .catch(error => {
+                  // Auto-play was prevented
+              });
+          }
     }
 };
+
 
 // sometimes, we want it just quiet and don't care which sprite is playing
 var audio_stop = function() {
     	audioSprite.pause();
 };
+
+// ENDE
